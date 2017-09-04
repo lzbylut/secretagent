@@ -1,0 +1,282 @@
+html {
+	color: white;
+	font-family: Helvetica;
+	font-size: 18px;
+}
+
+.store .details .data {
+	color: black;
+}
+
+header {
+	background-color: black;
+	position: fixed;
+	top:0px;
+	left:0px;
+	z-index: 1000;
+	width: 100%;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	width: 960px;
+	overflow: hidden;
+}
+
+.logo img {
+	margin-left: 0.5rem;
+	max-width: 100%;
+	height: 1.5rem;
+}
+
+.logo span {
+	margin-left: 1rem;
+	font-size: 1rem;
+}
+
+.banner {
+	margin-top: 2.5rem;
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner .container {
+	display: flex;
+	align-items: left;
+	width: 960px;
+	overflow: hidden;
+	margin-top: 9rem;
+}
+
+.arrival {
+	padding: 2rem 3rem;
+	background-color: black;
+	width: 20rem;
+}
+
+.arrival h4 {
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 0.25rem 0rem;
+}
+
+.arrival h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0.25rem 0rem;
+}
+
+nav {
+	display: block;
+	background-color: #b22222;
+	justify-content: center;
+}
+
+nav .large-navigation {
+	width: 960px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .small-navigation {
+	margin: auto;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+li {
+	padding: 0.75rem 0rem;
+}
+
+.products {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.products .container {
+	width: 960px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.product {
+	display: block;
+	width: 30%;
+	height: 100%;
+	border: 4px solid black;
+}
+
+.product-image {
+	height: 9rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0rem;
+}
+
+.product-image img {
+	height: auto;
+	width: 9rem;
+}
+
+.product-name {
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0rem;
+}
+
+.store {
+ 	width: 100%;
+ 	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 4rem;
+}
+
+.store .container {
+	width: 960px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.store .details {
+	display: block;
+	width: 35%;
+}
+
+.details .key {
+	display: block;
+	padding: 1rem 2rem;
+	background-color: black;
+}
+
+.details .data {
+	display: block;
+	padding: 0.5rem 2rem;
+
+}
+
+footer {
+	width: 100%;
+	height: 9rem;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer .container {
+	width: 960px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.logo  {
+		width: 100%;
+	}
+
+	.banner .container {
+		width: 100%;
+	}
+
+	nav .large-navigation {
+		display: none;
+	}
+
+	nav .small-navigation {
+		display: flex;
+	}
+
+	.products .container {
+		width: 100%;
+	}
+
+	.product {
+		width: 47%;
+	}
+
+	.product.glasses {
+		display: none;
+	}
+
+	.store .container {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.banner {
+		height: 15rem;
+	}
+
+	.banner .container {
+		margin-top: 10rem;
+	}
+
+	.arrival {
+		padding: 1rem 2rem;
+		width: 100%;
+	}
+
+	.arrival h4 {
+		font-size: 0.77rem;
+		font-weight: bold;
+		margin: 0.25rem 0rem;
+	}
+
+	.arrival h1 {
+		font-size: 1rem;
+		font-weight: bold;
+		margin: 0.25rem 0rem;
+	}
+
+	.products .container {
+		justify-content: center;
+	}
+
+	.product {
+		width: 90%;
+	}
+
+	.product.watch {
+		display: none;
+	}
+
+	.store .container {
+		display: flex;
+		flex-flow: column;
+	}
+
+	.store .details {
+		width: 90%;
+	}
+
+	.details .key {
+		margin-top: 0.5rem;
+	}
+
+	footer .container {
+		text-align: center;
+	}
+}
